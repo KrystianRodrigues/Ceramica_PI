@@ -54,6 +54,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -157,6 +158,7 @@
     <Content Include="Paginas\ListarPerda.aspx" />
     <Content Include="Paginas\Login.aspx" />
     <Content Include="Paginas\Operario\index.aspx" />
+    <Content Include="Paginas\Relatórios.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -321,6 +323,13 @@
     </Compile>
     <Compile Include="Paginas\Operario\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Relatórios.aspx.cs">
+      <DependentUpon>Relatórios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Relatórios.aspx.designer.cs">
+      <DependentUpon>Relatórios.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
