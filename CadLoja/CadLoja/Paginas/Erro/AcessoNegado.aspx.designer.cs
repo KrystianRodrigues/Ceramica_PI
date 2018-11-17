@@ -7,10 +7,10 @@
 // </gerado automaticamente>
 //------------------------------------------------------------------------------
 
-namespace CadLoja.Paginas.Operario {
+namespace CadLoja.Paginas.Erro {
     
     
-    public partial class index {
+    public partial class AcessoNegado {
         
         /// <summary>
         /// Controle form1.
@@ -31,12 +31,12 @@ namespace CadLoja.Paginas.Operario {
         protected global::System.Web.UI.WebControls.Label lblTitulo;
         
         /// <summary>
-        /// Controle lbSair.
+        /// Controle HyperLink1.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbSair;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
     }
 }

@@ -12,7 +12,7 @@
         <div>
             <asp:Label ID="lblTitulo" runat="server" Text="Administrador"></asp:Label>
             <br />
-            <asp:LinkButton ID="lbSair" runat="server">Sair</asp:LinkButton>
+            <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
         </div>
     </form>
 </body>

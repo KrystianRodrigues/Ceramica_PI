@@ -149,6 +149,7 @@
     <Content Include="Paginas\CadCliente.aspx" />
     <Content Include="Paginas\CadMateria.aspx" />
     <Content Include="Paginas\CadPerda.aspx" />
+    <Content Include="Paginas\Erro\AcessoNegado.aspx" />
     <Content Include="Paginas\Home.html" />
     <Content Include="Paginas\ListarCliente.aspx" />
     <Content Include="Paginas\ListarProduto.aspx" />
@@ -196,13 +197,13 @@
     <Compile Include="App_Code\Classes\Cliente.cs" />
     <Compile Include="App_Code\Classes\Materia.cs" />
     <Compile Include="App_Code\Classes\Perda.cs" />
-    <Content Include="App_Code\Classes\Pessoa.cs" />
+    <Compile Include="App_Code\Classes\Pessoa.cs" />
     <Compile Include="App_Code\Classes\Produto.cs" />
     <Compile Include="App_Code\Mapped.cs" />
     <Compile Include="App_Code\Persistencia\ClienteBD.cs" />
     <Compile Include="App_Code\Persistencia\MateriaBD.cs" />
     <Compile Include="App_Code\Persistencia\PerdaBD.cs" />
-    <Content Include="App_Code\Persistencia\PessoaBD.cs" />
+    <Compile Include="App_Code\Persistencia\PessoaBD.cs" />
     <Compile Include="App_Code\Persistencia\ProdutoBD.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -272,6 +273,13 @@
     <Compile Include="Paginas\CadPerda.aspx.designer.cs">
       <DependentUpon>CadPerda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\Erro\AcessoNegado.aspx.cs">
+      <DependentUpon>AcessoNegado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Erro\AcessoNegado.aspx.designer.cs">
+      <DependentUpon>AcessoNegado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\ListarCliente.aspx.cs">
       <DependentUpon>ListarCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -339,7 +347,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Paginas\Erro\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
