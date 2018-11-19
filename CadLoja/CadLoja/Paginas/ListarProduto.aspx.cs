@@ -5,7 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using WebSiteExemplo.Persistencia;
-using System.Data;
+using System.Data;
+
 
 namespace CadLoja.Paginas
 {
@@ -48,6 +49,16 @@ namespace CadLoja.Paginas
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        protected void lbSair_Click(object sender, EventArgs e)
+        {
+            {
+                Session.Abandon();
+                Session.Clear();
+                Session.RemoveAll();
+                Response.Redirect("Login.aspx");
+            }
         }
     }
 }

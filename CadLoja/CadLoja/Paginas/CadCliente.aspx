@@ -37,8 +37,11 @@
         <br />
         <br />
         <asp:Label ID="lblMensagem" runat="server"></asp:Label>
-    </form>
+        <br />
+        <br />
     <a href="ListarCliente.aspx">Visualizar</a>
-    <a href="Home.html">Home</a>
-</body>
+    <a href="Home.aspx">Home</a>
+            <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
+    </form>
+    </body>
 </html>

@@ -10,12 +10,12 @@ namespace CadLoja.App_Code.Classes
     /// </summary>
     public class Pessoa
     {
-        public int Codigo { get; set; }
-        public string Cpf { get; set; }
+        public int Cpf { get; set; }
         public string Nome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
         public int Tipo { get; set; }
+
         public Pessoa()
         {
             //

@@ -29,8 +29,9 @@
             <br />
             <asp:Label ID="lblMensagem" runat="server"></asp:Label>
         </div>
-    </form>
     <a href="ListarProduto.aspx">Visualizar</a>
-    <a href="Home.html">Home</a>
-</body>
+    <a href="Home.aspx">Home</a>
+            <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
+    </form>
+    </body>
 </html>

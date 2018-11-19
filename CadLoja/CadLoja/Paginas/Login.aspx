@@ -13,9 +13,9 @@
             <asp:Label ID="lblTitulo" runat="server" Text="Login"></asp:Label>
             <br />
             <br />
-            <asp:Label ID="lblCpf" runat="server" Text="Cpf"></asp:Label>
+            <asp:Label ID="lblCpf" runat="server" Text="Email"></asp:Label>
             <br />
-            <asp:TextBox ID="txtCpf" runat="server"></asp:TextBox>
+            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
             <br />
             <br />
             <asp:Label ID="lblSenha" runat="server" Text="Senha"></asp:Label>

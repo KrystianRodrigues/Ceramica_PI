@@ -10,9 +10,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lblTitulo" runat="server" Text="Operario"></asp:Label>
+            <asp:Label ID="lblTitulo" runat="server" Text="Empregado"></asp:Label>
             <br />
             <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </form>
 </body>

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="CadLoja.Paginas.Home" %>
+
+<!DOCTYPE html>
 <!--
 Template Name: Shiphile
 Author: <a href="https://www.os-templates.com/">OS Templates</a>
@@ -23,8 +25,9 @@ Licence URI: https://www.os-templates.com/template-terms
             
             <header id="header" class="hoc clear center">
                 <!-- ################################################################################################ -->
-                <h1 id="logo"><i class="fas fa-truck-loading"></i> <a href="Home.html">Atelie da Le</a></h1>
+                <h1 id="logo"> <a href="Home.aspx">Atelie da Le</a></h1>
                 <!-- ################################################################################################ -->
+
             </header>
         </div>
 
@@ -52,6 +55,7 @@ Licence URI: https://www.os-templates.com/template-terms
 
                 </ul>
             </nav>
+            
         </div>
 
       

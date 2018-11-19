@@ -43,6 +43,16 @@ namespace CadLoja.Paginas
             {
                 lblMensagem.Text = "Erro ao salvar.";
             }
-        }
+        }
+
+        protected void lbSair_Click(object sender, EventArgs e)
+        {
+            {
+                Session.Abandon();
+                Session.Clear();
+                Session.RemoveAll();
+                Response.Redirect("Login.aspx");
+            }
+        }
     }
 }

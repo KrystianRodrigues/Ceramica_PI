@@ -37,12 +37,12 @@ namespace CadLoja.Paginas
 
         protected void btnEntrar_Click(object sender, EventArgs e)
         {
-            string cpf = txtCpf.Text.Trim();
+            string email = txtEmail.Text.Trim();
             string senha = txtSenha.Text.Trim();
-            if (!IsPreenchido(cpf))
+            if (!IsPreenchido(email))
             {
-                lblMensagem.Text = "Preencha o cpf";
-                txtCpf.Focus();
+                lblMensagem.Text = "Preencha o email";
+                txtEmail.Focus();
                 return;
             }
             if (!IsPreenchido(senha))
@@ -53,18 +53,18 @@ namespace CadLoja.Paginas
             }
             PessoaBD bd = new PessoaBD();
             Pessoa pessoa = new Pessoa();
-            pessoa = bd.Autentica(cpf, senha);
+            pessoa = bd.Autentica(email, senha);
             if (!UsuarioEncontrado(pessoa))
             {
                 lblMensagem.Text = "Usuário não encontrado";
-                txtCpf.Focus();
+                txtEmail.Focus();
                 return;
             }
-            Session["ID"] = pessoa.Codigo;
+            Session["id"] = pessoa.Cpf;
             switch (pessoa.Tipo)
             {
                 case 0:
-                    Response.Redirect("Administrador/Index.aspx");
+                    Response.Redirect("Home.aspx");
                     break;
                 case 1:
                     Response.Redirect("Operario/Index.aspx");

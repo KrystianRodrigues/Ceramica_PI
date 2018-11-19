@@ -22,9 +22,10 @@ namespace CadLoja.Paginas.Operario
             }
             else
             {
-                lblTitulo.Text = "Bem vindo (Cliente) : " + pessoa.Nome;
+                lblTitulo.Text = "Bem vindo (Empregado) : " + pessoa.Nome;
             }
-        }        private bool IsCliente(int tipo)
+        }
+        private bool IsCliente(int tipo)
         {
             bool retorno = false;
             if (tipo == 1)
@@ -32,7 +33,9 @@ namespace CadLoja.Paginas.Operario
                 retorno = true;
             }
             return retorno;
-        }
+        }
+
+
 
         protected void lbSair_Click(object sender, EventArgs e)
         {

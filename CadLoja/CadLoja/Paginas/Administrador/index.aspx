@@ -6,6 +6,8 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+
+    
 </head>
 <body>
     <form id="form1" runat="server">
@@ -13,6 +15,10 @@
             <asp:Label ID="lblTitulo" runat="server" Text="Administrador"></asp:Label>
             <br />
             <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
+            <br />
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Paginas/Home.html">Home</asp:HyperLink>
         </div>
     </form>
 </body>

@@ -144,13 +144,14 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Paginas\Adiministrador\index.aspx" />
+    <Content Include="Paginas\Administrador\index.aspx" />
     <Content Include="Paginas\AlterarProduto.aspx" />
     <Content Include="Paginas\CadastrarProduto.aspx" />
     <Content Include="Paginas\CadCliente.aspx" />
     <Content Include="Paginas\CadMateria.aspx" />
     <Content Include="Paginas\CadPerda.aspx" />
     <Content Include="Paginas\Erro\AcessoNegado.aspx" />
+    <Content Include="Paginas\Home.aspx" />
     <Content Include="Paginas\Home.html" />
     <Content Include="Paginas\ListarCliente.aspx" />
     <Content Include="Paginas\ListarProduto.aspx" />
@@ -233,11 +234,11 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Paginas\Adiministrador\index.aspx.cs">
+    <Compile Include="Paginas\Administrador\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Paginas\Adiministrador\index.aspx.designer.cs">
+    <Compile Include="Paginas\Administrador\index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\AlterarProduto.aspx.cs">
@@ -281,6 +282,13 @@
     </Compile>
     <Compile Include="Paginas\Erro\AcessoNegado.aspx.designer.cs">
       <DependentUpon>AcessoNegado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\ListarCliente.aspx.cs">
       <DependentUpon>ListarCliente.aspx</DependentUpon>
