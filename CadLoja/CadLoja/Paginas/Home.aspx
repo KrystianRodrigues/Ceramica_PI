@@ -19,6 +19,8 @@ Licence URI: https://www.os-templates.com/template-terms
 </head>
 <body id="top">
     
+    <form id="form1" runat="server">
+    
     <div class="bgded overlay" style="background-image:url('images/demo/backgrounds/01.png');">
 
         <div class="wrapper row0">
@@ -42,10 +44,13 @@ Licence URI: https://www.os-templates.com/template-terms
                             <li><a href="CadMateria.aspx">Materia Prima</a></li>
                             <li><a href="CadPerda.aspx">Perda de Materia</a></li>
                             <li><a href="CadCliente.aspx">Cliente</a></li>
+                            <li><a href="CadFornecedor.aspx">Fornecedores</a></li>
+                            <li><a href="CadFuncionario.aspx">Funcionarios</a></li>
                             <li><a href="ListarProduto.aspx">Listar Produto</a></li>
                             <li><a href="ListarMateria.aspx">Listar Materia</a></li>
                             <li><a href="ListarPerda.aspx">Listar Perda </a></li>
                             <li><a href="ListarCliente.aspx">Listar Cliente</a></li>
+                            <li><a href="Relatorios.aspx">Relatórios</a></li>
                         </ul>
                         
 
@@ -63,5 +68,9 @@ Licence URI: https://www.os-templates.com/template-terms
         <script src="layout/scripts/jquery.min.js"></script>
         <script src="layout/scripts/jquery.backtotop.js"></script>
         <script src="layout/scripts/jquery.mobilemenu.js"></script>
+        <p>
+            <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
+        </p>
+    </form>
 </body>
 </html>
