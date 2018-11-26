@@ -52,7 +52,12 @@
             <asp:Button ID="btnSalvar" runat="server" OnClick="btnSalvar_Click" Text="Salvar" />
             <br />
             <asp:Label ID="lblMensagem" runat="server"></asp:Label>
+            <br />
+            <br />
         </div>
+        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Paginas/Home.aspx">Home</asp:HyperLink>
+&nbsp;&nbsp;
+            <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
     </form>
 </body>
 </html>

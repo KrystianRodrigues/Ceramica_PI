@@ -34,7 +34,7 @@ namespace CadLoja.Paginas
             FornecedorBD bd = new FornecedorBD();
             if (bd.Insert(fornecedor))
             {
-                lblMensagem.Text = "Fornecedor cadastrada com sucesso";
+                lblMensagem.Text = "Fornecedor cadastrado com sucesso";
                 txtNome.Text = "";
                 txtEmpresa.Text = "";
                 txtCnpj.Text = "";
@@ -50,6 +50,16 @@ namespace CadLoja.Paginas
             else
             {
                 lblMensagem.Text = "Erro ao salvar.";
+            }
+        }
+
+        protected void lbSair_Click(object sender, EventArgs e)
+        {
+            {
+                Session.Abandon();
+                Session.Clear();
+                Session.RemoveAll();
+                Response.Redirect("Login.aspx");
             }
         }
     }

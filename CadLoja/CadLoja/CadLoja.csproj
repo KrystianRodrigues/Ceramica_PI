@@ -156,6 +156,7 @@
     <Content Include="Paginas\Home.aspx" />
     <Content Include="Paginas\Home.html" />
     <Content Include="Paginas\ListarCliente.aspx" />
+    <Content Include="Paginas\ListarFornecedor.aspx" />
     <Content Include="Paginas\ListarProduto.aspx" />
     <Content Include="Paginas\ListarMateria.aspx" />
     <Content Include="Paginas\ListarPerda.aspx" />
@@ -316,6 +317,13 @@
     </Compile>
     <Compile Include="Paginas\ListarCliente.aspx.designer.cs">
       <DependentUpon>ListarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\ListarFornecedor.aspx.cs">
+      <DependentUpon>ListarFornecedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ListarFornecedor.aspx.designer.cs">
+      <DependentUpon>ListarFornecedor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\ListarProduto.aspx.cs">
       <DependentUpon>ListarProduto.aspx</DependentUpon>

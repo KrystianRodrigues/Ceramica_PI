@@ -47,6 +47,7 @@ Licence URI: https://www.os-templates.com/template-terms
                             <li><a href="CadFornecedor.aspx">Fornecedores</a></li>
                             <li><a href="CadFuncionario.aspx">Funcionarios</a></li>
                             <li><a href="ListarProduto.aspx">Listar Produto</a></li>
+                            <li><a href="ListarFornecedor.aspx">Listar Fornecedor</a></li>
                             <li><a href="ListarMateria.aspx">Listar Materia</a></li>
                             <li><a href="ListarPerda.aspx">Listar Perda </a></li>
                             <li><a href="ListarCliente.aspx">Listar Cliente</a></li>

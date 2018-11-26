@@ -12,20 +12,42 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1">
+            <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2">
                 <series>
                     <asp:Series Name="Series1">
+                        <Points>
+                            <asp:DataPoint YValues="7" />
+                            <asp:DataPoint YValues="5" />
+                            <asp:DataPoint YValues="3" />
+                            <asp:DataPoint YValues="13" />
+                            <asp:DataPoint YValues="8" />
+                            <asp:DataPoint YValues="0" />
+                        </Points>
+                    </asp:Series>
+                    <asp:Series ChartArea="ChartArea2" ChartType="Bar" Name="BarChart">
+                        <Points>
+                            <asp:DataPoint YValues="1" />
+                            <asp:DataPoint YValues="2" />
+                            <asp:DataPoint YValues="4" />
+                            <asp:DataPoint YValues="8" />
+                            <asp:DataPoint YValues="0" />
+                        </Points>
                     </asp:Series>
                 </series>
                 <chartareas>
                     <asp:ChartArea Name="ChartArea1">
                     </asp:ChartArea>
+                    <asp:ChartArea Name="ChartArea2">
+                    </asp:ChartArea>
                 </chartareas>
             </asp:Chart>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server"></asp:SqlDataSource>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server"></asp:SqlDataSource>
             <br />
-            <asp:Label ID="lblTitulo" runat="server" Text="Administrador"></asp:Label>
         </div>
+        <p>
+            <asp:Label ID="lblTitulo" runat="server" Text="Administrador"></asp:Label>
+        </p>
     </form>
 </body>
 </html>

@@ -46,6 +46,11 @@
             <br />
             <asp:Label ID="lblMensagem" runat="server"></asp:Label>
         </div>
+        <p>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Paginas/Home.aspx">Home</asp:HyperLink>
+&nbsp;<asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Paginas/ListarFornecedor.aspx">Visualizar</asp:HyperLink>
+&nbsp;<asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
+        </p>
     </form>
 </body>
 </html>
