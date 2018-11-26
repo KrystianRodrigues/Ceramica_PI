@@ -67,7 +67,7 @@ namespace CadLoja.Paginas
                     Response.Redirect("Home.aspx");
                     break;
                 case 1:
-                    Response.Redirect("Operario/Index.aspx");
+                    Response.Redirect("Home.aspx");
                     break;
                 default:
                     break;

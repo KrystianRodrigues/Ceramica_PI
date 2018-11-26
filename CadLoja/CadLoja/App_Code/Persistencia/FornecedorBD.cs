@@ -18,7 +18,7 @@ namespace CadLoja.Persistencia
         {
             System.Data.IDbConnection objConexao;
             System.Data.IDbCommand objCommand;
-            string sql = "INSERT INTO tbl_fornecedor(for_nome, for_empresa, for_cpnj, for_cell, for_telefone, for_endereco, for_cidade, for_estado, for_cep, for_email) VALUES (?nome, ?empresa, ?cpnj, ?cell, ?telefone, ?endereco, ?cidade, ?estado, ?cep, ?email)";
+            string sql = "INSERT INTO tbl_fornecedor(for_nome, for_empresa, for_cnpj, for_cell, for_telefone, for_endereco, for_cidade, for_estado, for_cep, for_email) VALUES (?nome, ?empresa, ?cnpj, ?cell, ?telefone, ?endereco, ?cidade, ?estado, ?cep, ?email)";
 
             objConexao = Mapped.Connection();
             objCommand = Mapped.Command(sql, objConexao);
