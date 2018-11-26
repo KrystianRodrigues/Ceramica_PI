@@ -111,20 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
-    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
-    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
-    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
-    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
     <Content Include="bin\MySql.Data.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\System.Web.Optimization.dll" />
-    <Content Include="bin\WebGrease.dll" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -148,6 +135,7 @@
     <Content Include="Paginas\AlterarProduto.aspx" />
     <Content Include="Paginas\CadastrarProduto.aspx" />
     <Content Include="Paginas\CadCliente.aspx" />
+    <Content Include="Paginas\CadFornecedor.aspx" />
     <Content Include="Paginas\CadMateria.aspx" />
     <Content Include="Paginas\CadPerda.aspx" />
     <Content Include="Paginas\Erro\AcessoNegado.aspx" />
@@ -198,12 +186,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Code\Classes\Cliente.cs" />
+    <Compile Include="App_Code\Classes\Fornecedor.cs" />
     <Compile Include="App_Code\Classes\Materia.cs" />
     <Compile Include="App_Code\Classes\Perda.cs" />
     <Compile Include="App_Code\Classes\Pessoa.cs" />
     <Compile Include="App_Code\Classes\Produto.cs" />
     <Compile Include="App_Code\Mapped.cs" />
     <Compile Include="App_Code\Persistencia\ClienteBD.cs" />
+    <Compile Include="App_Code\Persistencia\FornecedorBD.cs" />
     <Compile Include="App_Code\Persistencia\MateriaBD.cs" />
     <Compile Include="App_Code\Persistencia\PerdaBD.cs" />
     <Compile Include="App_Code\Persistencia\PessoaBD.cs" />
@@ -261,6 +251,13 @@
     </Compile>
     <Compile Include="Paginas\CadCliente.aspx.designer.cs">
       <DependentUpon>CadCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\CadFornecedor.aspx.cs">
+      <DependentUpon>CadFornecedor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CadFornecedor.aspx.designer.cs">
+      <DependentUpon>CadFornecedor.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\CadMateria.aspx.cs">
       <DependentUpon>CadMateria.aspx</DependentUpon>

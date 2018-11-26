@@ -1,8 +1,9 @@
 ﻿using FATEC; //para acesso a classe Mapped
 using System;
 using System.Web;
-using WebSiteExemplo.Classes; //para acesso a classe Materia
+using CadLoja.App_Code.Classes; //para acesso a classe Materia
 using System.Data; //para uso de DataSet
+using WebSiteExemplo.Classes;
 
 namespace WebSiteExemplo.Persistencia
 {
