@@ -18,7 +18,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quantidade&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtQuantidade" runat="server"></asp:TextBox>
             <br />
-            Valor de Produção R$<asp:TextBox ID="txtValor" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Data&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="txtData" runat="server"></asp:TextBox>
             <br />
 &nbsp; Valor de venda R$&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtVenda" runat="server"></asp:TextBox>
