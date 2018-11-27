@@ -202,6 +202,7 @@
     <Compile Include="App_Code\Persistencia\PerdaBD.cs" />
     <Compile Include="App_Code\Persistencia\PessoaBD.cs" />
     <Compile Include="App_Code\Persistencia\ProdutoBD.cs" />
+    <Compile Include="App_Code\Persistencia\VendaBD.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
