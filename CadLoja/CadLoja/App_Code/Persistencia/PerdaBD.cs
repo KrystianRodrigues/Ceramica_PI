@@ -16,12 +16,12 @@ namespace WebSiteExemplo.Persistencia
         {
             System.Data.IDbConnection objConexao;
             System.Data.IDbCommand objCommand;
-            string sql = "INSERT INTO tbl_perda(per_tipo, per_quantidade, per_medidas) VALUES (?tipo, ?quantidade, ?medidas)";
+            string sql = "INSERT INTO tbl_perda(per_tipo, per_quantidade, per_medida) VALUES (?tipo, ?quantidade, ?medida)";
             objConexao = Mapped.Connection();
             objCommand = Mapped.Command(sql, objConexao);
             objCommand.Parameters.Add(Mapped.Parameter("?tipo", perda.Tipo));
             objCommand.Parameters.Add(Mapped.Parameter("?quantidade", perda.Quantidade));
-            objCommand.Parameters.Add(Mapped.Parameter("?medidas", perda.Medidas));
+            objCommand.Parameters.Add(Mapped.Parameter("?medida", perda.Medida));
             objCommand.ExecuteNonQuery();
             objConexao.Close();
             objCommand.Dispose();

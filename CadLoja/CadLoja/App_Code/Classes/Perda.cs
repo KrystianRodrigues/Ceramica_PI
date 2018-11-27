@@ -14,7 +14,7 @@ namespace WebSiteExemplo.Classes
         public int Codigo { get; set; }
         public string Tipo { get; set; }
         public string Quantidade { get; set; }
-        public string Medidas { get; set; }
+        public string Medida { get; set; }
         //construtor
         public Perda()
         {

@@ -17,7 +17,7 @@ namespace WebSiteExemplo.Persistencia
         {
             System.Data.IDbConnection objConexao;
             System.Data.IDbCommand objCommand;
-            string sql = "INSERT INTO tbl_materia(mat_tipo, mat_quantidade, mat_medidas, mat_fornecedor) VALUES (?tipo, ?quantidade, ?medidas, ?fornecedor)";
+            string sql = "INSERT INTO tbl_materiaprima(mat_tipo, mat_quantidade, mat_medidas, mat_fornecedor) VALUES (?tipo, ?quantidade, ?medidas, ?fornecedor)";
             objConexao = Mapped.Connection();
             objCommand = Mapped.Command(sql, objConexao);
             objCommand.Parameters.Add(Mapped.Parameter("?tipo", materia.Tipo));
@@ -38,7 +38,7 @@ namespace WebSiteExemplo.Persistencia
             System.Data.IDbCommand objCommand;
             System.Data.IDataAdapter objDataAdapter;
             objConexao = Mapped.Connection();
-            objCommand = Mapped.Command("SELECT * FROM tbl_materia", objConexao);
+            objCommand = Mapped.Command("SELECT * FROM tbl_materiaprima", objConexao);
             objDataAdapter = Mapped.Adapter(objCommand);
             objDataAdapter.Fill(ds);
             objConexao.Close();
