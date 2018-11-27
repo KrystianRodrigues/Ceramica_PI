@@ -16,7 +16,7 @@ namespace WebSiteExemplo.Classes
         //propriedades
         public int Codigo { get; set; }
         public string Nome { get; set; }
-        public String Quantidade { get; set; }
+        public string Quantidade { get; set; }
         public double Valor { get; set; }
         public double Venda { get; set; }
         //construtor
