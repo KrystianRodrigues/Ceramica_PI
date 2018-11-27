@@ -111,20 +111,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="bin\Antlr3.Runtime.dll" />
-    <Content Include="bin\AspNet.ScriptManager.bootstrap.dll" />
-    <Content Include="bin\AspNet.ScriptManager.jQuery.dll" />
-    <Content Include="bin\Microsoft.AspNet.FriendlyUrls.dll" />
-    <Content Include="bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
-    <Content Include="bin\Microsoft.ScriptManager.MSAjax.dll" />
-    <Content Include="bin\Microsoft.ScriptManager.WebForms.dll" />
-    <Content Include="bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="bin\MySql.Data.dll" />
-    <Content Include="bin\Newtonsoft.Json.dll" />
-    <Content Include="bin\System.Web.Optimization.dll" />
-    <Content Include="bin\WebGrease.dll" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -160,6 +146,7 @@
     <Content Include="Paginas\ListarProduto.aspx" />
     <Content Include="Paginas\ListarMateria.aspx" />
     <Content Include="Paginas\ListarPerda.aspx" />
+    <Content Include="Paginas\ListarVenda.aspx" />
     <Content Include="Paginas\Login.aspx" />
     <Content Include="Paginas\Operario\index.aspx" />
     <Content Include="Paginas\Relatorios.aspx" />
@@ -346,6 +333,13 @@
     <Compile Include="Paginas\ListarPerda.aspx.designer.cs">
       <DependentUpon>ListarPerda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\ListarVenda.aspx.cs">
+      <DependentUpon>ListarVenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ListarVenda.aspx.designer.cs">
+      <DependentUpon>ListarVenda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -392,6 +386,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="bin\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

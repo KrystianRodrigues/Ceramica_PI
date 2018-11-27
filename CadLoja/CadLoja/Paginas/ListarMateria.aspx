@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListarMateria.aspx.cs" Inherits="CadLoja.Paginas.ListarMateria" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ListarFornecedor.aspx.cs" Inherits="CadLoja.Paginas.ListarFornecedor" %>
 
 <!DOCTYPE html>
 
@@ -20,7 +20,7 @@
                 </Columns>
             </asp:GridView>
         </div>
-    <a href="CadMateria.aspx">Cadastrar</a>
+    <a href="CadFornecedor.aspx">Cadastrar</a>
     <a href="Home.aspx">Home</a>
             <asp:LinkButton ID="lbSair" runat="server" OnClick="lbSair_Click">Sair</asp:LinkButton>
     </form>
