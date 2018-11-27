@@ -28,9 +28,7 @@
         <br />
         Estado&nbsp;&nbsp;&nbsp;
         <asp:TextBox ID="txtEstado" runat="server"></asp:TextBox>
-        <br />
-        Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
         <asp:Button ID="btnSalvar" runat="server" OnClick="btnSalvar_Click" Text="Salvar" />

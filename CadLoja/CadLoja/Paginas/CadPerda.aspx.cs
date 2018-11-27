@@ -21,7 +21,7 @@ namespace CadLoja.Paginas
             Perda perda = new Perda();
             perda.Tipo = txtTipo.Text;
             perda.Quantidade = txtQuantidade.Text;
-            perda.Medidas = txtMedidas.Text;
+            perda.Medida = txtMedidas.Text;
             PerdaBD bd = new PerdaBD();
             if (bd.Insert(perda))
             {

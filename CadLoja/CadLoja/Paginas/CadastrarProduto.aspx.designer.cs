@@ -40,13 +40,13 @@ namespace CadLoja.Paginas {
         protected global::System.Web.UI.WebControls.TextBox txtQuantidade;
         
         /// <summary>
-        /// Controle txtValor.
+        /// Controle txtData.
         /// </summary>
         /// <remarks>
         /// Campo gerado automaticamente.
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtValor;
+        protected global::System.Web.UI.WebControls.TextBox txtData;
         
         /// <summary>
         /// Controle txtVenda.

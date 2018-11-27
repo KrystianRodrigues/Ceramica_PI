@@ -16,7 +16,7 @@ namespace WebSiteExemplo.Persistencia
         {
             System.Data.IDbConnection objConexao;
             System.Data.IDbCommand objCommand;
-            string sql = "INSERT INTO tbl_cliente(cli_nome, cli_cpf, cli_telefone, cli_cep, cli_cidade, cli_estado, cli_email) VALUES (?nome, ?cpf, ?telefone, ?cep, ?cidade, ?estado, ?email)";
+            string sql = "INSERT INTO tbl_cliente(cli_nome, cli_cpf, cli_telefone, cli_cep, cli_cidade, cli_estado) VALUES (?nome, ?cpf, ?telefone, ?cep, ?cidade, ?estado)";
             objConexao = Mapped.Connection();
             objCommand = Mapped.Command(sql, objConexao);
             objCommand.Parameters.Add(Mapped.Parameter("?nome", cliente.Nome));
@@ -25,7 +25,7 @@ namespace WebSiteExemplo.Persistencia
             objCommand.Parameters.Add(Mapped.Parameter("?cep", cliente.Cep));
             objCommand.Parameters.Add(Mapped.Parameter("?cidade", cliente.Cidade));
             objCommand.Parameters.Add(Mapped.Parameter("?estado", cliente.Estado));
-            objCommand.Parameters.Add(Mapped.Parameter("?email", cliente.Email));
+            
             objCommand.ExecuteNonQuery();
             objConexao.Close();
             objCommand.Dispose();
@@ -71,7 +71,7 @@ namespace WebSiteExemplo.Persistencia
                 obj.Cep = Convert.ToString(objDataReader["cli_cep"]);
                 obj.Cidade = Convert.ToString(objDataReader["cli_cidade"]);
                 obj.Estado = Convert.ToString(objDataReader["cli_estado"]);
-                obj.Email = Convert.ToString(objDataReader["cli_email"]);
+                
 
             }
             objDataReader.Close();

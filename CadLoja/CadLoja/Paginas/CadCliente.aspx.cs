@@ -25,19 +25,19 @@ namespace CrudPi.Paginas
             cliente.Cep = txtCep.Text;
             cliente.Cidade = txtCidade.Text;
             cliente.Estado = txtEstado.Text;
-            cliente.Email = txtEmail.Text;
+            
 
             ClienteBD bd = new ClienteBD();
             if (bd.Insert(cliente))
             {
-                lblMensagem.Text = "Funcionário cadastrado com sucesso";
+                lblMensagem.Text = "Cliente cadastrado com sucesso";
                 txtNome.Text = "";
                 txtCpf.Text = "";
                 txtTelefone.Text = "";
                 txtCep.Text = "";
                 txtCidade.Text = "";
                 txtEstado.Text = "";
-                txtEmail.Text = "";
+                
                 txtNome.Focus();
             }
             else
