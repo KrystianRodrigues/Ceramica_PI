@@ -10,7 +10,7 @@
 namespace CadLoja.Paginas {
     
     
-    public partial class ListarFornecedor {
+    public partial class ListarMateria {
         
         /// <summary>
         /// Controle form1.

@@ -10,7 +10,7 @@ using System.Data;
 
 namespace CadLoja.Paginas
 {
-    public partial class ListarFornecedor : System.Web.UI.Page
+    public partial class ListarMateria : System.Web.UI.Page
     {
 
         private void Carrega()
