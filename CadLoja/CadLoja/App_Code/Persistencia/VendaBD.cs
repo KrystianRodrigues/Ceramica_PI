@@ -4,11 +4,33 @@ using System.Linq;
 using System.Web;
 using FATEC;
 using System.Data;
+using CadLoja.App_Code.Classes;
 
 namespace CadLoja.App_Code.Persistencia
 {
     public class VendaBD
     {
+        //metodos
+
+        //insert
+        public bool Insert(Venda venda)
+        {
+            System.Data.IDbConnection objConexao;
+            System.Data.IDbCommand objCommand;
+            string sql = "INSERT INTO tbl_vendas(ven_data, ven_tipo, cli_cpf, ped_codigo) VALUES (?dataVenda, ?tipoVenda, 1, 0)";
+            objConexao = Mapped.Connection();
+            objCommand = Mapped.Command(sql, objConexao);
+            objCommand.Parameters.Add(Mapped.Parameter("?dataVenda", venda.DataVenda));
+            objCommand.Parameters.Add(Mapped.Parameter("?tipoVenda", venda.TipoVenda));
+            //objCommand.Parameters.Add(Mapped.Parameter("?cpfCliente", venda.CpfCliente));
+            //objCommand.Parameters.Add(Mapped.Parameter("?codigoPedido", venda.CodigoPedido));
+            objCommand.ExecuteNonQuery();
+            objConexao.Close();
+            objCommand.Dispose();
+            objConexao.Dispose();
+            return true;
+        }
+
         //selectall
         public DataSet SelectAll()
         {

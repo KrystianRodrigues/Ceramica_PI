@@ -130,10 +130,10 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Paginas\CadastrarVenda.aspx" />
     <Content Include="Paginas\CadFornecedor.aspx" />
     <Content Include="Paginas\Administrador\index.aspx" />
     <Content Include="Paginas\AlterarProduto.aspx" />
-    <Content Include="Paginas\CadastrarProduto.aspx" />
     <Content Include="Paginas\CadCliente.aspx" />
     <Content Include="Paginas\CadFuncionario.aspx" />
     <Content Include="Paginas\CadMateria.aspx" />
@@ -194,6 +194,7 @@
     <Compile Include="App_Code\Classes\Perda.cs" />
     <Compile Include="App_Code\Classes\Pessoa.cs" />
     <Compile Include="App_Code\Classes\Produto.cs" />
+    <Compile Include="App_Code\Classes\Venda.cs" />
     <Compile Include="App_Code\Mapped.cs" />
     <Compile Include="App_Code\Persistencia\ClienteBD.cs" />
     <Compile Include="App_Code\Persistencia\FuncionarioBD.cs" />
@@ -229,6 +230,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Paginas\CadastrarVenda.aspx.cs">
+      <DependentUpon>CadastrarVenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CadastrarVenda.aspx.designer.cs">
+      <DependentUpon>CadastrarVenda.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Paginas\CadFornecedor.aspx.cs">
       <DependentUpon>CadFornecedor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -249,13 +257,6 @@
     </Compile>
     <Compile Include="Paginas\AlterarProduto.aspx.designer.cs">
       <DependentUpon>AlterarProduto.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Paginas\CadastrarProduto.aspx.cs">
-      <DependentUpon>CadastrarProduto.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Paginas\CadastrarProduto.aspx.designer.cs">
-      <DependentUpon>CadastrarProduto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\CadCliente.aspx.cs">
       <DependentUpon>CadCliente.aspx</DependentUpon>
