@@ -29,9 +29,8 @@ namespace CadLoja.Paginas
             {
                 lblMensagem.Text = "Venda cadastrada com sucesso";
 
-                txtDataVenda.Text = "";
                 txtTipoVenda.Text = "";
-                txtDataVenda.Focus();
+                txtTipoVenda.Focus();
             }
             else
             {
