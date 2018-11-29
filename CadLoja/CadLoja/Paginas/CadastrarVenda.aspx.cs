@@ -20,7 +20,7 @@ namespace CadLoja.Paginas
         protected void btnSalvar_Click(object sender, EventArgs e)
         {
             Venda venda= new Venda();
-            venda.DataVenda = Convert.ToDateTime(txtDataVenda.Text);
+            venda.DataVenda = DateTime.Now;
             venda.TipoVenda = txtTipoVenda.Text;
 
             VendaBD bd = new VendaBD();
